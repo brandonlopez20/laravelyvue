@@ -1,0 +1,41 @@
+POST http://127.0.0.1:8000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Juan",
+  "segundoNombre": "Carlos",
+  "apellido": "Gonzalez",
+  "segundoApellido": "Perez",
+  "apellidoDeCasado": "Garcia",
+  "tipoDeDocumento": "12345678",
+  "fechaDeNacimiento": "2000-01-01",
+  "telefono": "1234567890",
+  "email": "correo@ejemplo.com",
+  "sexo": "Masculino",
+  "estadoCivil": "Soltero",
+  "direccion": "Calle 123"
+}
+
+###
+GET http://127.0.0.1:8000/api/users HTTP/1.1
+
+###
+PUT http://127.0.0.1:8000/api/users/2 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Jose",
+  "segundoNombre": "Isabel",
+  "apellido": "Hernández",
+  "segundoApellido": "Martínez",
+  "apellidoDeCasado": "",
+  "tipoDeDocumento": "87654321",
+  "fechaDeNacimiento": "1995-05-15",
+  "telefono": "0987654321",
+  "email": "maria.hernandez@ejemplo.com",
+  "sexo": "Femenino",
+  "estadoCivil": "Casada",
+  "direccion": "Avenida Principal 456"
+}
+
+
